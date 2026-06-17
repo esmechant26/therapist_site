@@ -1,0 +1,16 @@
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent fixed header from covering anchored section headings */
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 720px) {
+  /* Mobile header is taller when menu is visible */
+  section[id] {
+    scroll-margin-top: 120px;
+  }
+}

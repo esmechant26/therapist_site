@@ -1,0 +1,340 @@
+/* ==========================================
+   RAÍZ PSYCHOTHERAPY DESIGN SYSTEM
+   Earthy / Warm / Organic
+========================================== */
+
+:root {
+  /* Backgrounds */
+  --bg-main: #f7f3ee;
+  --bg-card: #fcfaf7;
+  --bg-soft: #f1ebe4;
+
+  /* Text */
+  --color-text: #3c322c;
+  --color-muted: #6d6258;
+
+  /* Accents */
+  --color-accent: #8b6f5c;
+  --color-accent-2: #705748;
+
+  /* Supporting colors */
+  --sage: #9ca38f;
+  --terracotta: #b57a61;
+  --sand: #d7c7b3;
+  --walnut: #5d4b3f;
+
+  /* Borders */
+  --border: #e1d9cf;
+  --muted-border: #ece5dc;
+
+  /* Effects */
+  --card-shadow: 0 10px 30px rgba(70, 50, 35, 0.05);
+  --card-radius: 32px;
+  --pill-radius: 14px;
+  --focus-ring: rgba(139, 111, 92, 0.12);
+
+  --glass-bg: rgba(252, 250, 247, 0.95);
+  --accent-bg-light: #f2ece6;
+}
+
+/* ==========================================
+   GLOBAL
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--color-text);
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.7;
+}
+
+.page-content {
+  padding-top: 6rem;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 7rem 2rem 3rem;
+  color: var(--color-text);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(circle at top left, rgba(181, 122, 97, 0.08), transparent 45%);
+
+  pointer-events: none;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--terracotta);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin: 1rem 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.lead {
+  margin: 1.5rem 0;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.section-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.section-margin {
+  margin-top: 3rem;
+}
+
+.section-margin-bottom {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.card-padding-1 {
+  padding: 1.25rem;
+}
+
+.card-padding-2 {
+  padding: 2.5rem;
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+.hero-image {
+  width: 100%;
+  height: 460px;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  min-height: 460px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg-soft);
+
+  color: var(--walnut);
+
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary,
+.small-cta {
+  display: inline-block;
+
+  background: var(--color-accent);
+
+  color: white;
+
+  padding: 0.9rem 1.3rem;
+
+  border: none;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+
+  box-shadow: 0 8px 20px rgba(112, 87, 72, 0.12);
+}
+
+.btn-primary:hover,
+.small-cta:hover {
+  background: var(--color-accent-2);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 14px 28px rgba(112, 87, 72, 0.16);
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.muted,
+.contact-info,
+.faq-answer {
+  color: var(--color-muted);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  color: var(--color-text);
+
+  font-weight: 700;
+}
+
+.list-basic {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+
+  color: var(--color-muted);
+
+  line-height: 1.9;
+}
+
+/* ==========================================
+   FAQ / ACCORDION
+========================================== */
+
+.accordion {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.accordion-item {
+  background: transparent;
+  border-bottom: 1px solid var(--muted-border);
+}
+
+.accordion-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: transparent;
+
+  border: none;
+
+  padding: 1.25rem 0;
+
+  cursor: pointer;
+
+  color: var(--color-text);
+
+  font-weight: 700;
+  text-align: left;
+}
+
+.accordion-header.open {
+  color: var(--color-accent);
+}
+
+.accordion-icon {
+  color: var(--terracotta);
+  font-size: 1.2rem;
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+
+  transition:
+    max-height 250ms ease,
+    padding 250ms ease;
+
+  padding: 0;
+}
+
+.accordion-panel.open {
+  max-height: 400px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-question {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.faq-answer {
+  line-height: 1.9;
+}
+
+/* ==========================================
+   FORM / EMBEDS
+========================================== */
+
+.iframe-wrap {
+  width: 100%;
+  min-height: 520px;
+}
+
+.embedded-iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* ==========================================
+   UTILITIES
+========================================== */
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-1-25 {
+  margin-bottom: 1.25rem;
+}

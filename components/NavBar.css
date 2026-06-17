@@ -1,0 +1,182 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 50;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.25rem 2.5rem;
+
+  background: rgba(247, 243, 238, 0.96);
+
+  border-bottom: 1px solid #e3ddd5;
+
+  backdrop-filter: blur(6px);
+
+  box-shadow: none;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.brand strong {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 2.6rem;
+
+  font-weight: 500;
+
+  color: #3c322c;
+
+  letter-spacing: -0.02em;
+}
+
+.brand span {
+  margin-top: 0.15rem;
+
+  color: #9b8a7a;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  position: relative;
+
+  color: #5f5348;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  padding: 0;
+
+  border-radius: 0;
+
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 100%;
+  height: 1px;
+
+  background: #8b6f5c;
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition: transform 200ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: #8b6f5c;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.menu-toggle {
+  display: none;
+
+  background: transparent;
+
+  border: 1px solid #d8d0c7;
+
+  color: #5d4b3f;
+
+  padding: 0.7rem 1rem;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: none;
+}
+
+.menu-toggle:hover {
+  background: #f1ebe4;
+}
+
+@media (max-width: 840px) {
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1.25rem;
+
+    padding: 1.5rem 2rem;
+
+    background: #fcfaf7;
+
+    border-bottom: 1px solid #e3ddd5;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    padding: 1rem 1.25rem;
+  }
+
+  .brand strong {
+    font-size: 1.7rem;
+  }
+
+  .nav-links {
+    padding: 1.25rem;
+  }
+}
