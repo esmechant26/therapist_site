@@ -1,33 +1,3 @@
-// import React from "react";
-// import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// import NavBar from "./components/NavBar.jsx";
-// import Home from "./pages/index.jsx";
-// import About from "./pages/about.jsx";
-// import Services from "./pages/services.jsx";
-// import FAQ from "./pages/faq.jsx";
-// import Contact from "./pages/contact.jsx";
-// import "./App.css";
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <NavBar />
-//       <main className="page-content">
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/about" element={<About />} />
-//           <Route path="/services" element={<Services />} />
-//           <Route path="/faq" element={<FAQ />} />
-//           <Route path="/contact" element={<Contact />} />
-//           <Route path="*" element={<Navigate to="/" replace />} />
-//         </Routes>
-//       </main>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
