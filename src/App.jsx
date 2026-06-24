@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/index.jsx";
 import About from "./pages/about.jsx";
 import Services from "./pages/services.jsx";
+import Servicios from "./pages/servicios.jsx";
 import FAQ from "./pages/faq.jsx";
 import Contact from "./pages/contact.jsx";
 import "./App.css";
@@ -63,11 +64,25 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/servicios" element={<Servicios />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <footer className="site-footer">
+        <div className="footer-content">
+          <p>
+            <strong>Practice address:</strong> Fully remote in Oakland, California
+          </p>
+          <p>
+            <strong>Mailing address:</strong> 495 Jackson St #1502 Oakland, CA 94610
+          </p>
+          <p>
+            <strong>Business phone number:</strong> 510-544-6979
+          </p>
+        </div>
+      </footer>
     </BrowserRouter>
   );
 }

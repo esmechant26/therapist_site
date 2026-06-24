@@ -8,6 +8,7 @@ function NavBar() {
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Services", path: "/services" },
+    { label: "Servicios en Español", path: "/servicios" },
     { label: "FAQ", path: "/faq" },
     { label: "Contact", path: "/contact" },
   ];

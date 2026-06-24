@@ -159,6 +159,31 @@ body {
   object-fit: cover;
 }
 
+.hero-image--small {
+  width: 25%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.about-hero-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-training {
+  flex: 1;
+  min-width: 220px;
+}
+
+.section-title--spaced {
+  margin-bottom: 2rem;
+}
+
 .hero-image-placeholder {
   width: 100%;
   min-height: 460px;
@@ -230,6 +255,28 @@ body {
   color: var(--color-text);
 
   font-weight: 700;
+}
+
+.site-footer {
+  background: var(--bg-soft);
+  padding: 1.75rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.footer-content p {
+  margin: 0;
 }
 
 .list-basic {

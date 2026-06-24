@@ -30,13 +30,13 @@ export default function Contact() {
       <div className="card card-padding-2">
         <h1>Contact</h1>
 
-        <p className={styles.helperNote}>You can write a little description here</p>
+        <p className={styles.helperNote}></p>
 
         <form onSubmit={handleSubmit} method="POST" className={styles.contactForm} aria-label="Contact form">
           <div className={styles.formRow}>
             <div>
               <label className={styles.label} htmlFor="name">
-                Your name
+                Name
               </label>
               <input id="name" name="name" required />
               <div className={styles.formError}>
@@ -54,12 +54,20 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
+          <div>
+            <label className={styles.label} htmlFor="phone">
+              Phone number
+            </label>
+            <input id="phone" name="phone" type="tel" />
+            <div className={styles.formError}>
+              <ValidationError prefix="Phone number" field="phone" errors={state.errors} />
+            </div>
+          </div>
           <div>
             <label className={styles.label} htmlFor="message">
               Message
             </label>
-            <textarea id="message" name="message" placeholder="Tell me briefly what you'd like help with" required />
+            <textarea id="message" name="message" required />
             <div className={styles.formError}>
               <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
