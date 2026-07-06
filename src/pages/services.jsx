@@ -4,22 +4,21 @@ const serviceItems = [
   {
     id: "individual",
     service: "Individual Therapy",
-    description: "Individual therapy description",
+    cost: "$175 per 50 min session",
+    description: "For adults 18 and over. This is a 1:1 space to explore the themes you are curious  about working through in therapy.  ",
   },
   {
-    id: "relationship",
-    service: "Relationship Therapy",
-    description: "Relationship therapy description",
+    id: "dyadic",
+    service: "Dyadic Therapy",
+    cost: "$210 per 50 minute session",
+    description:
+      "For couples, friends, family members who want to work together. This service is  for up two people per session to receive support to be curious about specific  events, patterns, or aspects of the relationship and reconnect. ",
   },
   {
-    id: "ketamine",
-    service: "Ketamine Assisted Therapy",
-    description: "Ketamine therapy description",
-  },
-  {
-    id: "immigration",
-    service: "Immigration Evaluations",
-    description: "Immigration Evaluations description",
+    id: "triadic",
+    service: "Triadic (and beyond!) Therapy",
+    cost: "$210 per 50 minute session",
+    description: "For polycules, friend groups, and families made up of three or more people who  want to work together. This space is welcoming of all relationship constellations.",
   },
 ];
 
@@ -43,10 +42,13 @@ function Services() {
                 id={`${item.id}-header`}
                 onClick={() => toggle(item.id)}
               >
-                <span>{item.service}</span>
+                <span className="accordion-left">
+                  <span className="service-title">{item.service}</span>
+                </span>
                 <span className="accordion-icon">{open === item.id ? "−" : "+"}</span>
               </button>
               <div id={`${item.id}-panel`} role="region" aria-labelledby={`${item.id}-header`} className={`accordion-panel ${open === item.id ? "open" : ""}`}>
+                <p className="service-cost muted">{item.cost}</p>
                 <p className="muted">{item.description}</p>
               </div>
             </div>

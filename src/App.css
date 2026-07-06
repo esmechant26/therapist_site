@@ -119,6 +119,82 @@ body {
   font-weight: 500;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+.section-copy,
+.section-copy p,
+.section-copy li {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.section-copy ul {
+  margin-left: 1.4rem;
+  list-style: disc;
+}
+
+.section-card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.section-rule {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid var(--muted-border);
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  margin-top: 0;
+}
+
+.section-rule {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid var(--muted-border);
+}
+
+.section-card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  margin-top: 0;
+}
+
 .section-margin {
   margin-top: 3rem;
 }
@@ -133,11 +209,11 @@ body {
 ========================================== */
 
 .card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
-  overflow: hidden;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .card-padding-1 {
@@ -169,15 +245,37 @@ body {
 }
 
 .about-hero-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
-.about-training {
-  flex: 1;
-  min-width: 220px;
+.about-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.about-Aleida {
+  min-width: 0;
+}
+
+.hero-image--small {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 1.5rem;
+}
+
+.quotes,
+.about-training,
+.about-the-practice {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 840px) {
+  .about-hero-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section-title--spaced {
@@ -322,6 +420,22 @@ body {
 
   font-weight: 700;
   text-align: left;
+}
+
+.accordion-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.service-title {
+  font-weight: 700;
+}
+
+.service-cost {
+  color: var(--color-muted);
+  font-size: 0.95rem;
 }
 
 .accordion-header.open {
