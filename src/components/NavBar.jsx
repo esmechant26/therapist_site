@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import nobanLogo from "../assets/nobannowhite.png";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,8 +17,11 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="brand">
-        <strong>Raíz</strong>
-        <span>Psychotherapy</span>
+        <img src={nobanLogo} alt="Noban" className="brand-logo" />
+        <div className="brand-text">
+          <strong>Raíz</strong>
+          <span>Psychotherapy</span>
+        </div>
       </div>
       <button className="menu-toggle" type="button" aria-expanded={menuOpen} onClick={() => setMenuOpen((current) => !current)}>
         {menuOpen ? "Close" : "Menu"}

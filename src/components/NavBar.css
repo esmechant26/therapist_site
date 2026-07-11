@@ -12,9 +12,9 @@
 
   padding: 1.25rem 2.5rem;
 
-  background: rgba(247, 243, 238, 0.96);
+  background: transparent;
 
-  border-bottom: 1px solid #e3ddd5;
+  border-bottom: none;
 
   backdrop-filter: blur(6px);
 
@@ -23,9 +23,23 @@
 
 .brand {
   display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+}
+
+.brand-text {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 1;
+}
+
+.brand-logo {
+  width: 120;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .brand strong {
