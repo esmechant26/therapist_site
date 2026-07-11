@@ -48,119 +48,87 @@ html {
 body {
   background: var(--bg-main);
   color: var(--color-text);
-  font-family: "Source Serif 4", Georgia, serif;
-  line-height: 1.7;
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 img {
-  border-radius: 0 !important;
+  border-radius: 0;
+  max-width: 100%;
 }
 
 .page-content {
-  padding-top: 6rem;
+  padding-top: 7.5rem;
 }
 
 /* ==========================================
-   HERO
+   MAIN CONTENT WRAPPER
 ========================================== */
 
-.hero {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 7rem 2rem 3rem;
+.section-margin {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto 0;
+  padding: 1.5rem 0.25rem;
+}
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+.hero-title,
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
   color: var(--color-text);
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: radial-gradient(circle at top left, rgba(181, 122, 97, 0.08), transparent 45%);
-
-  pointer-events: none;
-}
-
-.eyebrow {
-  margin: 0;
-  color: var(--terracotta);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.hero-title {
-  margin: 1rem 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3rem, 6vw, 5rem);
-  line-height: 0.95;
-  font-weight: 500;
-}
-
-.lead {
-  margin: 1.5rem 0;
-  color: var(--color-muted);
-  font-size: 1.1rem;
-  line-height: 1.9;
-}
-
-/* ==========================================
-   SECTIONS
-========================================== */
-
-.section-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
 .section-title {
-  margin: 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  margin: 0 0 1.5rem;
   font-size: clamp(2.2rem, 4vw, 3rem);
   line-height: 1.05;
-  font-weight: 500;
+}
+
+.section-subtitle {
+  margin: 1rem 0 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 .text-center {
   text-align: center;
 }
 
-.section-subtitle {
-  margin-top: 1rem;
-  margin-bottom: 1.25rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--color-text);
-}
-
-.section-copy,
-.section-copy p,
-.section-copy li {
+.section-copy {
   margin-bottom: 1rem;
   line-height: 1.8;
   color: var(--color-text);
 }
 
-.section-copy ul {
-  margin-left: 1.4rem;
-  list-style: disc;
-}
-
-.section-card-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
+/* ==========================================
+   HOME INTRO
+========================================== */
 
 .home-intro-grid {
   display: grid;
-  gap: 2rem;
   grid-template-columns: minmax(280px, 1fr) 320px;
+  gap: 2.5rem;
   align-items: start;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+.home-intro-copy {
+  min-width: 0;
 }
 
 .home-intro-image {
@@ -170,14 +138,7 @@ img {
 .home-intro-image img {
   width: 100%;
   display: block;
-  height: auto;
   object-fit: cover;
-  border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
-}
-
-.home-intro-image:hover .home-hero-credit {
-  opacity: 1;
 }
 
 @media (max-width: 900px) {
@@ -186,42 +147,84 @@ img {
   }
 }
 
-.faq-answer {
-  margin-top: 0;
+/* ==========================================
+   INVERTED SECTION
+========================================== */
+
+.invert-section {
+  width: 100%;
+
+  background: rgba(36, 25, 15, 0.9);
+
+  color: var(--bg-main);
+
+  margin: 4rem 0;
+
+  padding: 3rem 2.5rem;
+
+  border-radius: var(--card-radius);
 }
 
-.section-rule {
-  margin: 2rem 0;
+.invert-section h2,
+.invert-section h3,
+.invert-section .section-title,
+.invert-section .section-subtitle,
+.invert-section .section-copy,
+.invert-section .section-copy p,
+.invert-section .section-copy li {
+  color: var(--bg-main);
+}
+
+.invert-section .section-copy {
+  line-height: 1.85;
+}
+
+.invert-section .small-cta {
+  background: var(--bg-main);
+
+  color: var(--color-text);
+}
+
+.invert-section .small-cta:hover {
+  background: var(--bg-soft);
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card {
+  background: transparent;
+
   border: none;
-  border-top: 1px solid var(--muted-border);
+
+  box-shadow: none;
+
+  border-radius: 0;
 }
 
-.section-card-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.card-padding-1 {
+  padding: 1.25rem;
 }
 
-.faq-item {
-  margin-bottom: 1.5rem;
+.card-padding-2 {
+  padding: 2.5rem;
 }
 
-.faq-question {
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
+/* ==========================================
+   MOBILE
+========================================== */
 
-.faq-answer {
-  margin-top: 0;
-}
+@media (max-width: 600px) {
+  .section-margin {
+    padding: 2rem 1.25rem;
+  }
 
-.section-margin {
-  margin-top: 5rem;
-}
+  .invert-section {
+    padding: 2rem 1.25rem;
 
-.section-margin-bottom {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+    border-radius: 22px;
+  }
 }
 
 /* ==========================================
@@ -364,11 +367,7 @@ img {
   margin: 1rem 0 0.75rem;
 }
 
-.about-training hr,
-.about-the-practice hr,
-.about-body hr {
-  margin: 0;
-}
+/* Unified hr styling is handled by the global hr rule above */
 
 @media (max-width: 840px) {
   .about-hero-row {
@@ -454,9 +453,11 @@ img {
 }
 
 .site-footer {
-  background: var(--bg-soft);
+  background: var(--color-text);
+  color: var(--bg-main);
   padding: 1.75rem 0;
   margin-top: 2rem;
+  border-radius: 22px;
 }
 
 .footer-content {
@@ -465,10 +466,14 @@ img {
   padding: 0 1.5rem;
   display: grid;
   gap: 0.75rem;
-  color: var(--color-muted);
+  color: var(--bg-main);
   font-size: 0.95rem;
   text-align: center;
   justify-items: center;
+}
+
+.footer-content a {
+  color: var(--bg-main);
 }
 
 .footer-content p {
@@ -481,14 +486,6 @@ img {
 
 .section-block:last-child {
   margin-bottom: 0;
-}
-
-.servicios-hero {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
-  margin-bottom: 2rem;
 }
 
 .servicios-hero-grid {
@@ -556,9 +553,11 @@ img {
 }
 
 .servicios-card-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* center the cards; using flex-wrap ensures partial rows center properly */
+  justify-content: center;
   margin-top: 1.5rem;
 }
 
@@ -571,6 +570,8 @@ img {
   transition:
     transform 200ms ease,
     box-shadow 200ms ease;
+  /* fixed card width so cards line up and center correctly */
+  flex: 0 0 320px;
 }
 
 .service-card:hover {

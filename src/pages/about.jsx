@@ -30,8 +30,8 @@ function About() {
         </div>
       </div>
 
-      <div className="card card-padding-2 about-body">
-        <h3>I have worked in community mental health for the last ten years in both non clinical and clinical roles and have worked with the following populations:</h3>
+      <section className="invert-section about-body">
+        <h3 className="section-subtitle">I have worked in community mental health for the last ten years in both non clinical and clinical roles and have worked with the following populations:</h3>
         <ul>
           <li>youth in the foster care system in school based settings </li>
           <li>survivors of sexual and domestic violence or human trafficking of all genders and immigration statuses</li>
@@ -56,8 +56,7 @@ function About() {
           interventions with client-centered and holistic interventions an d techniques to ensure that each client's individual set of strengths and experiences is honored as we work together towards
           their goals.
         </p>
-        <hr />
-      </div>
+      </section>
 
       <div className="card card-padding-2 about-training">
         <h3>Training</h3>

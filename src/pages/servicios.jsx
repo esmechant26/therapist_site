@@ -25,45 +25,23 @@ export default function Servicios() {
   }
 
   const sectionCards = [
+    { id: "card-1", title: "Mejorar las relaciones entre adultos y sus padres", content: "Servicios para adultos que quieren mejorar su relación con sus padres que hablan español " },
     {
-      id: "family",
-      title: "Fortalece tu Familia",
-      content: (
-        <>
-          <p>
-            Qué pasa cuando no podemos comunicarnos en familia, estamos viviendo vidas separadas o sentimos que hay equipos y estamos divididos. En terapia, mi filosofía es tener un proceso
-            colaborativo en el cual trabajaremos juntos en un espacio tranquilo y seguro, con el propósito de atender tus motivos de consulta, situaciones que puedan estarse presentando, con la meta
-            de lograr cambios significativos que lleven a tus objetivos.
-          </p>
-          <p className="muted">Especialidades: traumas familiares, duelos, conflicto interpersonal, depresión, ansiedad.</p>
-        </>
-      ),
+      id: "card-2",
+      title: "Afrontar los retos de vivir en un país nuevo y el proceso de inmigración ",
+      content: "Navegando la aculturación, las diferencias en creencias, valores y normas en Estados Unidos ",
+    },
+    { id: "card-3", title: "Apoyo para liberar los efectos de tu pasado", content: "Explorando traumas de la infancia, relaciones familiares y románticas, inmigración y experiencias de racismo " },
+    {
+      id: "card-4",
+      title: "Cómo aliviar lo que puede parecer una vida entera de estrés",
+      content: "Desarrollar tolerancia al malestar y habilidades de gestión del estrés para llevar una vida más relajada ",
     },
     {
-      id: "children",
-      title: "Ayuda a tus hijos",
-      content: (
-        <>
-          <p>
-            Tu hijo está pasando por una situación traumatizante, ataques de pánico, TOC, ansiedad, depresión, tensiones del divorcio, lo diagnosticaron con autismo, problemas de autoestima, manejo de
-            la ira, bullying, o ideación suicida? Puedo ayudarte. Tengo experiencia en métodos de terapia basados en estudios de investigación para el óptimo desarrollo infantil por medio del juego y
-            aprender herramientas para sanar heridas juntos.
-          </p>
-        </>
-      ),
-    },
-    {
-      id: "couples",
-      title: "Reconecta con tu pareja",
-      content: (
-        <>
-          <p>
-            Comunicación, conflicto, conexión. Quizás alguno de estos tres factores te lleve a buscar apoyo para ti y tu pareja. Las heridas y el dolor pueden estar presentes cuando la relación más
-            importante de nuestra vida está pasando o ha pasado por momentos difíciles. Mi objetivo es ayudarlos a tener una experiencia diferente el uno del otro para que su relación sea
-            significativa y exitosa.
-          </p>
-        </>
-      ),
+      id: "card-5",
+      title: "Mejora las relaciones con tus seres queridos LGBTQ+",
+      content:
+        "Navegar temas LGBTQ+ a través del prisma de la cultura latina, hablar con la familia sombre temas LGBTQ+, aprender a desarrollar aceptación y  apoyo después de que un ser querido salió del clóset",
     },
   ];
 
