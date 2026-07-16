@@ -8,9 +8,9 @@ function Home() {
   return (
     <main>
       <section className="section-margin">
-        <h2 className="section-title text-center">There is always room to grow more and more authentically you!</h2>
+        <h2 className="section-title text-center">There is always room to grow towards a more authentic You!</h2>
 
-        <p className="section-subtitle text-center">Affirming, authentic virtual therapy services for individuals who identify as LGBTQ+, BIPOC or Latine and for couples in California.</p>
+        <p className="section-subtitle text-center">Virtual therapy services for LGBTQ+ folks, BIPOC, and Spanish Speakers in California </p>
 
         <section className="home-intro-grid">
           <div className="home-intro-copy">
@@ -46,24 +46,24 @@ function Home() {
         <section className="invert-section">
           <h3 className="section-subtitle">Therapy at Raiz Psychotherapy</h3>
 
-          <p className="section-copy">I love to work with people who are motivated to engage in therapy, and that can look many different ways.</p>
+          <p>I love to work with people who are motivated to engage in therapy, and that can look many different ways.</p>
 
-          <p className="section-copy">
+          <p>
             Sometimes motivation manifests as curiosity to look at certain patterns or areas of your life in new ways. It can also look like knowing exactly what changes you want to make in your life
             and knowing it's time to start that work. For others, motivation looks like finally taking the big step to ask for support.
           </p>
 
-          <p className="section-copy">
+          <p>
             Regardless of how motivation looks for you, if this resonates with you, we can do great work together to get to the root of your experience and create change. Each session is as unique as
             whoever is sitting in front of me.
           </p>
 
-          <p className="section-copy">
+          <p>
             What remains consistent regardless of what modalities and tools we are using together is that we will move at your own pace towards understanding how the experiences, attachments, and
             events you experience have shaped you and where you want to go from there.
           </p>
 
-          <p className="section-copy">
+          <p>
             While traditionally therapy can look like diving deep into details of your history, at Raíz Psychotherapy it can also look like working exclusively in the present moment, acknowledging the
             past without having to re-live it.
           </p>
@@ -73,36 +73,47 @@ function Home() {
           </button>
         </section>
 
-        <h3 className="section-subtitle">Who I Work With:</h3>
+        <h3 className="section-subtitle">Who I Work With</h3>
 
-        <p className="section-copy">
+        <p>
           LGBTQ+ identified individuals wanting support with issues including but not limited to relational issues with family, romantic partners, or platonic relationships, kink/BDSM, gender,
           sexuality, processing childhood, complex, or systemic traumatic experiences.
         </p>
 
-        <p className="section-copy">
+        <p>
           People who identify as Latine/a/o and BIPoC who want specialized, culturally sensitive support around issues including but not limited to intergenerational trauma, first generation family
           issues, the impacts of immigration and acculturation across generations, and other complex, systemic traumatic experiences.
         </p>
 
-        <p className="section-copy">
+        <p>
           Relational Constellations including people in non-monogamous relationships, polycules, monogamous couples, friends, and adults wanting to improve their relationships with their parents who
           need support to resolve issues that are affecting the relationship(s).
         </p>
 
-        <p className="section-copy">
+        <p>
           Individuals seeking psychedelic and/or spiritual integration. Have you had an experience in an altered state of consciousness that you're still not quite sure what to make of? Therapy can be
           a great place to process these experiences.
         </p>
 
-        <p className="section-copy">
+        <p>
           Altered states of consciousness can include states influenced by substances, spiritual awakenings, or near-death experiences. Specializing in integration for Ketamine Assisted Therapy (KAT),
           this is a great option if you are already connected to a prescriber for your medicine.
         </p>
 
-        <p className="section-copy">
+        <p>
           Please note that for appointments centered around integration, the use of any substances is not allowed during session. This is simply a space to process these experiences. If you have
           questions about KAT, please contact me via the <Link to="/contact">contact page</Link>.
+        </p>
+
+        <h3 className="section-subtitle">About the Practice</h3>
+        <p>Raíz [rrah-ees] is a Spanish noun that means “root” </p>
+        <p>
+          Raíz Psychotherapy, is deeply grounded in the understanding of how systemic issues of the world we live in play major roles in our mental health. By acknowledging the systemic, I take a
+          liberatory approach as we dive deeper in our work together to explore the factors influencing your day-to-day life to better support you in meeting your therapeutic goals.{" "}
+        </p>
+        <p>
+          I chose the name Raíz Psychotherapy because I have a long-time appreciation and awe for plants and the way roots exist in the dark and soil to sustain the plant that lives above ground,
+          often hidden but always doing life-sustaining work. I love the idea of roots serving as symbols of growth, depth, grounding, establishing belonging, and unique intrinsic knowledge.{" "}
         </p>
       </section>
     </main>

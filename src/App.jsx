@@ -27,15 +27,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-content">
           <p>
-            <strong>Practice address:</strong> Fully remote in Oakland, California
-          </p>
-          <p>
-            <strong>Mailing address:</strong> 495 Jackson St #1502 Oakland, CA 94610
-          </p>
-          <p>
-            <strong>Business phone number:</strong> 510-544-6979
-          </p>
-          <p>
+            Practice Address: Fully remote in Oakland, California | Phone Number: 510-544-6979 | Social:{" "}
             <a href="https://instagram.com/raizpsychotherapy" target="_blank" rel="noopener noreferrer" className="footer-social-link">
               <span className="footer-social-icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
@@ -45,6 +37,8 @@ function App() {
               @raizpsychotherapy
             </a>
           </p>
+          <p></p>
+          <p></p>
         </div>
       </footer>
     </BrowserRouter>

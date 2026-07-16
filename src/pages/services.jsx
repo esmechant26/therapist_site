@@ -52,8 +52,8 @@ function Services() {
               )}
               <div>
                 <h3 className="service-title">{item.service}</h3>
-                <p className="service-cost muted">{item.cost}</p>
-                <p className="muted">{item.description}</p>
+                <p className="service-cost">{item.cost}</p>
+                <p>{item.description}</p>
               </div>
             </div>
           ))}

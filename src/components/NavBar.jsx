@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import nobanLogo from "../assets/nobannowhite.png";
+import nobanLogo from "/public/nobannowhite.png";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);

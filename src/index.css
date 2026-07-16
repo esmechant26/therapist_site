@@ -1,6 +1,12 @@
 /* Global styles */
 html {
   scroll-behavior: smooth;
+  background-color: #fffbeb;
+}
+
+body,
+#root {
+  background-color: #fffbeb;
 }
 
 /* Prevent fixed header from covering anchored section headings */
