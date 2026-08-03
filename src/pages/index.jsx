@@ -8,7 +8,7 @@ function Home() {
   return (
     <main>
       <section className="section-margin">
-        <h2 className="section-title text-center">There is always room to grow towards a more authentic You!</h2>
+        <h2 className="section-title home-title">There is always room to grow towards a more authentic You!</h2>
 
         <p className="section-subtitle text-center">Virtual therapy services for LGBTQ+ folks, BIPOC, and Spanish Speakers in California </p>
 
@@ -38,7 +38,6 @@ function Home() {
 
           <div className="home-intro-image">
             <img src={headshot3} alt="Aleida Moreno smiling" />
-
             <span className="home-hero-credit">Image by Jaq Cieslak</span>
           </div>
         </section>

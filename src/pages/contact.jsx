@@ -14,12 +14,12 @@ export default function Contact() {
         <div className="card card-padding-2">
           <h1 className="section-title">Contact</h1>
           <div className={`${styles.statusBox} ${styles.statusSuccess}`}>Thanks — your message was sent.</div>
-          <p className="section-copy">
+          {/* <p className="section-copy">
             Or open the form directly:{" "}
             <a href={`https://formspree.io/f/${formId}`} target="_blank" rel="noopener noreferrer">
               Open form
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     );
@@ -77,10 +77,6 @@ export default function Contact() {
             <button className="btn-primary" type="submit" disabled={state.submitting}>
               {state.submitting ? "Sending…" : "Send Message"}
             </button>
-
-            {/* <span className={styles.helperNote}>
-              You can also email me at <a href="mailto:esmemchant@gmail.com">esmemchant@gmail.com</a>
-            </span> */}
           </div>
         </form>
       </div>

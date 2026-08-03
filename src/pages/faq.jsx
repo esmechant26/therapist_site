@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const faqItems = [
   {
@@ -109,10 +110,8 @@ function FAQ() {
         </div>
 
         <p className="section-copy">
-          Still unsure if therapy at Raíz Psychotherapy is for you after reading through this list?{" "}
-          <a href="https://raizpsychotherapy.com/contact" target="_blank" rel="noopener noreferrer">
-            Schedule a complimentary 20 minute information call
-          </a>{" "}
+          Still unsure if therapy at Raíz Psychotherapy is for you after reading through this list?
+          <Link to="/contact">Schedule a complimentary 20 minute information call </Link>
           via text or video so we can work out any lingering questions.
         </p>
       </div>

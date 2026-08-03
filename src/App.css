@@ -275,7 +275,12 @@ h4,
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-
+.home-title {
+  max-width: 30ch;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
 .section-title--spaced {
   margin-bottom: 2rem;
 }
@@ -344,11 +349,18 @@ h4,
   border-radius: 0;
 }
 
+.home-intro-image,
+.servicios-hero-image,
+.about-hero-image,
+.service-block-image {
+  position: relative;
+}
+
 .image-credit,
 .home-hero-credit {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: 0.75rem;
+  bottom: 0.75rem;
   background: rgba(255, 255, 255, 0.88);
   color: var(--color-text);
   font-size: 0.85rem;
@@ -361,7 +373,7 @@ h4,
   z-index: 2;
 }
 
-.home-hero:hover .home-hero-credit,
+.home-intro-image:hover .home-hero-credit,
 .servicios-hero-image:hover .image-credit,
 .about-hero-image:hover .image-credit,
 .service-block-image:hover .image-credit {
