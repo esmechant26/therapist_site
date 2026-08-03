@@ -3,7 +3,50 @@ html {
   scroll-behavior: smooth;
   background-color: #fffbeb;
 }
+.home-hero {
+  height: 450px;
+  max-width: 1900px;
+  margin: 0 auto;
 
+  background-image: url("/nobannowhite.png");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/* remove the white rectangle */
+.home-hero::before {
+  display: none;
+}
+
+.home-hero-overlay {
+  position: relative;
+  text-align: center;
+  max-width: 750px;
+  padding: 2rem;
+}
+
+.home-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+
+  margin-bottom: 1.5rem;
+}
+
+.home-hero p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+
+  max-width: 650px;
+  margin: 0 auto 2rem;
+}
 body,
 #root {
   background-color: #fffbeb;

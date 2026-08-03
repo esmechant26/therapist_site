@@ -110,8 +110,7 @@ function FAQ() {
         </div>
 
         <p className="section-copy">
-          Still unsure if therapy at Raíz Psychotherapy is for you after reading through this list?
-          <Link to="/contact">Schedule a complimentary 20 minute information call </Link>
+          Still unsure if therapy at Raíz Psychotherapy is for you after reading through this list? <Link to="/contact">Schedule a complimentary 20 minute information call </Link>
           via text or video so we can work out any lingering questions.
         </p>
       </div>

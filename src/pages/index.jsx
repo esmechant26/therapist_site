@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
+import "../index.css";
 import headshot3 from "../assets/headshot3.jpg";
 
 function Home() {
@@ -7,33 +8,40 @@ function Home() {
 
   return (
     <main>
+      {/* HERO */}
+      <section className="home-hero">
+        <div className="home-hero-overlay">
+          <h1>There is always room to grow towards a more authentic You!</h1>
+
+          <p>Virtual therapy services for LGBTQ+ folks, BIPOC, and Spanish Speakers in California</p>
+
+          <button className="btn-primary" onClick={() => navigate("/contact")}>
+            Contact Me
+          </button>
+        </div>
+      </section>
+
+      {/* INTRO */}
       <section className="section-margin">
-        <h2 className="section-title home-title">There is always room to grow towards a more authentic You!</h2>
-
-        <p className="section-subtitle text-center">Virtual therapy services for LGBTQ+ folks, BIPOC, and Spanish Speakers in California </p>
-
         <section className="home-intro-grid">
           <div className="home-intro-copy">
+            <h2 className="section-title">Welcome</h2>
+
             <p className="section-copy">Thank you for being here and welcome!</p>
 
             <p className="section-copy">
               My name is Aleida Moreno and I am a Licensed Marriage and Family Therapist (LMFT 162743) in the Bay Area, offering virtual therapy services across California.
             </p>
 
-            <p className="section-copy">
+            <p>
               I deeply enjoy working with the communities that I am a part of myself. This passion is fueled from the many years spent seeking quality mental health services that also made me feel
               seen and understood within my identities and life experiences and strive to be someone that the people can feel that way around as they embark on their healing journeys.
             </p>
-
-            <p className="section-copy">
+            <p>
               I draw from a variety of modalities for my work because no two people experience any given moment the same way. I believe that the space for healing therapy provides should also be
               individualized to each unique experience. For me, the therapy space is not one for pathologizing behaviors, thoughts, or experiences but rather a space to approach these things with
               curiosity, compassion, and openness.
             </p>
-
-            <button className="btn-primary" onClick={() => navigate("/contact")}>
-              Contact Page
-            </button>
           </div>
 
           <div className="home-intro-image">

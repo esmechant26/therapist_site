@@ -33,19 +33,30 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--bg-main);
+  min-height: 100%;
 }
 
-body,
-#root {
+body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg-main);
+
+  background-size: 30%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: var(--color-text);
   font-family: "Source Sans 3", sans-serif;
   line-height: 1.8;
   font-size: 1.05rem;
+}
+
+#root {
+  min-height: 100vh;
   overflow-x: hidden;
+
+  /* Transparent so the body background shows through */
+  background: transparent;
 }
 
 * {
@@ -159,7 +170,7 @@ h4,
   color: #fffbeb;
   padding: 0.9rem 1.3rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
   /* box-shadow: 0 8px 20px #eee9e8; */
@@ -393,7 +404,9 @@ h4,
 }
 
 .service-card {
-  background: var(--bg-card);
+  background: rgba(255, 252, 245, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
