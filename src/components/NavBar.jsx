@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import nobanLogo from "/public/nobannowhite.png";
+import greenlogo from "../assets/greenlogo.jpg";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ function NavBar() {
   return (
     <nav className="navbar">
       <Link to="/" className="brand" onClick={() => setMenuOpen(false)} aria-label="Go to home page">
-        <img src={nobanLogo} alt="Noban" className="brand-logo" />
+        <img src={greenlogo} alt="Noban" className="brand-logo" />
         <div className="brand-text">
           <strong>Raíz</strong>
           <span>Psychotherapy</span>
