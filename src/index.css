@@ -3,33 +3,34 @@ html {
   scroll-behavior: smooth;
   background-color: #fffbeb;
 }
+
+body,
+#root {
+  min-height: 100vh;
+  background-color: #fffbeb;
+}
+
 .home-hero {
-  height: 450px;
+  min-height: 450px;
   max-width: 1900px;
   margin: 0 auto;
-
-  background-image: url("/nobannowhite.png");
-  background-size: 25%;
-  background-repeat: no-repeat;
-  background-position: right;
-
+  padding: 1rem 0.2rem 0;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: relative;
-}
-
-/* remove the white rectangle */
-.home-hero::before {
-  display: none;
+  isolation: isolate;
 }
 
 .home-hero-overlay {
   position: relative;
+  z-index: 1;
   text-align: center;
-  max-width: 750px;
+  max-width: 1000px;
   padding: 2rem;
+  /* background: rgba(255, 251, 235, 0.18); */
+  /* backdrop-filter: blur(12px); */
+  border-radius: 20px;
 }
 
 .home-hero h1 {
@@ -47,14 +48,16 @@ html {
   max-width: 650px;
   margin: 0 auto 2rem;
 }
-body,
-#root {
-  background-color: #fffbeb;
-}
-
 /* Prevent fixed header from covering anchored section headings */
 section[id] {
   scroll-margin-top: 88px;
+}
+
+main,
+section,
+footer {
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 720px) {

@@ -16,13 +16,13 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="brand">
+      <Link to="/" className="brand" onClick={() => setMenuOpen(false)} aria-label="Go to home page">
         <img src={nobanLogo} alt="Noban" className="brand-logo" />
         <div className="brand-text">
           <strong>Raíz</strong>
           <span>Psychotherapy</span>
         </div>
-      </div>
+      </Link>
       <button className="menu-toggle" type="button" aria-expanded={menuOpen} onClick={() => setMenuOpen((current) => !current)}>
         {menuOpen ? "Close" : "Menu"}
       </button>

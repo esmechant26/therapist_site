@@ -18,7 +18,7 @@
   --border: #e8dccd;
   --muted-border: #eee4d4;
   --card-shadow: 0 10px 30px rgba(70, 50, 35, 0.08);
-  --card-radius: 0px;
+  --card-radius: 10px;
   --pill-radius: 14px;
   --focus-ring: rgba(92, 68, 41, 0.14);
   --glass-bg: rgba(255, 252, 244, 0.95);
@@ -37,13 +37,10 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   min-height: 100vh;
-
-  background-size: 30%;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: var(--bg-main);
 
   color: var(--color-text);
   font-family: "Source Sans 3", sans-serif;
@@ -51,12 +48,26 @@ body {
   font-size: 1.05rem;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/src/assets/greenlogo.jpg");
+  background-repeat: no-repeat;
+  background-position: center 120%;
+  background-size: 90vmin;
+  background-attachment: fixed;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
 #root {
   min-height: 100vh;
   overflow-x: hidden;
-
-  /* Transparent so the body background shows through */
   background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 * {
@@ -66,7 +77,7 @@ body {
 img {
   display: block;
   max-width: 100%;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 a {
@@ -74,7 +85,7 @@ a {
 }
 
 .page-content {
-  padding-top: 7.5rem;
+  padding-top: 0;
 }
 
 .section-margin {
@@ -119,9 +130,13 @@ h4,
 }
 
 .muted,
-.contact-info,
-.faq-answer {
+.contact-info {
   color: var(--color-muted);
+}
+
+.faq-answer {
+  color: var(--color-text);
+  opacity: 1;
 }
 
 .label {
@@ -208,6 +223,7 @@ h4,
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .invert-section {
@@ -357,7 +373,7 @@ h4,
   height: auto;
   object-fit: cover;
   display: block;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .home-intro-image,
@@ -565,7 +581,11 @@ h4,
 
 .faq-question {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text);
+  font-family: "Cormorant Garamond", serif;
 }
 
 .service-title {
@@ -672,6 +692,11 @@ h4,
 }
 
 @media (max-width: 600px) {
+  body::before {
+    background-position: center 68%;
+    background-size: 80vmin;
+  }
+
   .section-margin {
     padding: 2rem 1.25rem;
   }

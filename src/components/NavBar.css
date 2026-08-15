@@ -1,18 +1,12 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  z-index: 50;
+  position: static;
+  z-index: 20;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 1.6rem 3rem;
-
-  background: transparent;
 
   border-bottom: none;
 
@@ -26,6 +20,12 @@
   align-items: center;
   gap: 1rem;
   line-height: 1;
+  text-decoration: none;
+}
+
+.brand:hover,
+.brand:focus-visible {
+  text-decoration: none;
 }
 
 .brand-text {
@@ -152,12 +152,18 @@
 }
 
 @media (max-width: 840px) {
+  .navbar {
+    position: relative;
+    z-index: 30;
+  }
+
   .menu-toggle {
     display: inline-flex;
   }
 
   .nav-links {
     position: absolute;
+    z-index: 40;
 
     top: 100%;
     left: 0;
@@ -172,8 +178,8 @@
 
     padding: 1.5rem 2rem;
 
-    background: #fcfaf7;
-
+    background: rgba(255, 251, 235, 0.96);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #e3ddd5;
   }
 
