@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/index.jsx";
 import About from "./pages/about.jsx";
@@ -9,9 +9,20 @@ import FAQ from "./pages/faq.jsx";
 import Contact from "./pages/contact.jsx";
 import "./App.css";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar />
       <main className="page-content">
         <Routes>

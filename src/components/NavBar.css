@@ -105,7 +105,7 @@
   width: 100%;
   height: 1px;
 
-  background: #8b6f5c;
+  background: rgba(71, 111, 54, 0.38);
 
   transform: scaleX(0);
 
@@ -148,7 +148,7 @@
 }
 
 .menu-toggle:hover {
-  background: #f1ebe4;
+  background: rgba(181, 217, 81, 0.08);
 }
 
 @media (max-width: 840px) {
