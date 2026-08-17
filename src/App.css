@@ -5,7 +5,7 @@
 
 :root {
   --bg-main: #fffbeb;
-  --bg-card: #fffcf5;
+  --bg-card: #4f140a;
   --bg-soft: #fff8e9;
   --color-text: #4f140a;
   --color-muted: #6d6258;
@@ -240,9 +240,9 @@ h4,
   width: 100%;
   margin: 2rem 0 2rem;
   padding: 1rem 2.5rem 2rem;
-  background: rgba(249, 167, 145, 0.34);
+  background: #3b1105;
   border: none;
-  color: #3b1105;
+  color: #fffbeb;
   border-radius: 28px;
   box-shadow:
     inset 0 0 0 1px rgba(255, 82, 87, 0.12),
@@ -256,7 +256,7 @@ h4,
 .invert-section .section-copy,
 .invert-section .section-copy p,
 .invert-section .section-copy li {
-  color: #3b1105;
+  color: #fffbeb;
 }
 
 .invert-section .section-copy {
@@ -265,7 +265,7 @@ h4,
 
 .invert-section .small-cta {
   background: rgba(122, 74, 64, 0.66);
-  color: rgba(255, 251, 235, 0.94);
+  color: #fffbeb;
 }
 
 .invert-section .small-cta:hover {
@@ -434,7 +434,9 @@ h4,
 }
 
 .service-card {
-  background: rgba(249, 167, 145, 0.24);
+  background: #4f140a;
+  color: #fffbeb;
+  text-align: center;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 82, 87, 0.14);
@@ -453,6 +455,9 @@ h4,
 }
 
 .service-card-title {
+  align-items: center;
+  text-align: center;
+  color: #fffbeb;
   margin-top: 0;
 }
 
@@ -487,8 +492,8 @@ h4,
 }
 
 .site-footer {
-  background: rgba(255, 82, 87, 0.14);
-  color: #3b1105;
+  background: #3b1105;
+  color: rgba(255, 255, 255, 0.88);
   padding: 1.75rem 1.75rem 1.75rem;
   margin-top: 1.75rem;
   border-top: none;
@@ -502,7 +507,7 @@ h4,
   padding: 0 1.5rem;
   display: grid;
   gap: 0.75rem;
-  color: #3b1105;
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.95rem;
   text-align: center;
   justify-items: center;

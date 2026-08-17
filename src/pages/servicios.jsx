@@ -25,23 +25,23 @@ export default function Servicios() {
   }
 
   const sectionCards = [
-    { id: "card-1", title: "Mejorar las relaciones entre adultos y sus padres", content: "Servicios para adultos que quieren mejorar su relación con sus padres que hablan español " },
+    { id: "card-1", title: "Mejorar las relaciones entre adultos y sus padres.", content: "Servicios para adultos que quieren mejorar su relación con sus padres que hablan español. " },
     {
       id: "card-2",
-      title: "Afrontar los retos de vivir en un país nuevo y el proceso de inmigración ",
-      content: "Navegando la aculturación, las diferencias en creencias, valores y normas en Estados Unidos ",
+      title: "Afrontar los retos de vivir en un país nuevo y el proceso de inmigración. ",
+      content: "Navegando la aculturación, las diferencias en creencias, valores y normas en Estados Unidos. ",
     },
-    { id: "card-3", title: "Apoyo para liberar los efectos de tu pasado", content: "Explorando traumas de la infancia, relaciones familiares y románticas, inmigración y experiencias de racismo " },
+    { id: "card-3", title: "Apoyo para liberar los efectos de tu pasado.", content: "Explorando traumas de la infancia, relaciones familiares y románticas, inmigración y experiencias de racismo. " },
     {
       id: "card-4",
-      title: "Cómo aliviar lo que puede parecer una vida entera de estrés",
-      content: "Desarrollar tolerancia al malestar y habilidades de gestión del estrés para llevar una vida más relajada ",
+      title: "Cómo aliviar lo que puede parecer una vida entera de estrés.",
+      content: "Desarrollar tolerancia al malestar y habilidades de gestión del estrés para llevar una vida más relajada. ",
     },
     {
       id: "card-5",
-      title: "Mejora las relaciones con tus seres queridos LGBTQ+",
+      title: "Mejora las relaciones con tus seres queridos LGBTQ+.",
       content:
-        "Navegar temas LGBTQ+ a través del prisma de la cultura latina, hablar con la familia sombre temas LGBTQ+, aprender a desarrollar aceptación y  apoyo después de que un ser querido salió del clóset",
+        "Navegar temas LGBTQ+ a través del prisma de la cultura latina, hablar con la familia sombre temas LGBTQ+, aprender a desarrollar aceptación y  apoyo después de que un ser querido salió del clóset.",
     },
   ];
 

@@ -27,9 +27,9 @@ function About() {
           <span className="image-credit">Image by S. Kumar</span>
         </div>
       </div>
-
-      <h3 className="section-subtitle">I have worked in community mental health for the last ten years in both non clinical and clinical roles and have worked with the following populations:</h3>
       <section className="invert-section">
+        <h3 className="section-subtitle">I have worked in community mental health for the last ten years in both non clinical and clinical roles and have worked with the following populations:</h3>
+
         <ul>
           <li>youth in the foster care system in school based settings </li>
           <li>survivors of sexual and domestic violence or human trafficking of all genders and immigration statuses</li>
@@ -55,13 +55,12 @@ function About() {
         with client-centered and holistic interventions an d techniques to ensure that each client's individual set of strengths and experiences is honored as we work together towards their goals.
       </p>
 
-      <div className="servicios-hero-copy">
+      <div className="invert-section">
         <h3 className="section-subtitle">Training</h3>
         <p>Somatic Experiencing Beginning through Intermediate II (2017-2020)</p>
         <p>Trained in Psychodynamic modalities during my studies at CIIS (2019-2022)</p>
         <p>Ketamine Assisted Therapy Training from Alchemy Collective (2023)</p>
         <p>Emotionally Focused Therapy for Couples (2026)</p>
-        <hr />
       </div>
     </section>
   );

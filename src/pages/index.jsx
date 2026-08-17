@@ -111,17 +111,18 @@ function Home() {
           Please note that for appointments centered around integration, the use of any substances is not allowed during session. This is simply a space to process these experiences. If you have
           questions about KAT, please contact me via the <Link to="/contact">contact page</Link>.
         </p>
-
-        <h3 className="section-subtitle">About the Practice</h3>
-        <p>Raíz [rrah-ees] is a Spanish noun that means “root” </p>
-        <p>
-          Raíz Psychotherapy, is deeply grounded in the understanding of how systemic issues of the world we live in play major roles in our mental health. By acknowledging the systemic, I take a
-          liberatory approach as we dive deeper in our work together to explore the factors influencing your day-to-day life to better support you in meeting your therapeutic goals.{" "}
-        </p>
-        <p>
-          I chose the name Raíz Psychotherapy because I have a long-time appreciation and awe for plants and the way roots exist in the dark and soil to sustain the plant that lives above ground,
-          often hidden but always doing life-sustaining work. I love the idea of roots serving as symbols of growth, depth, grounding, establishing belonging, and unique intrinsic knowledge.{" "}
-        </p>
+        <section className="invert-section">
+          <h3 className="section-subtitle">About the Practice</h3>
+          <p>Raíz [rrah-ees] is a Spanish noun that means “root” </p>
+          <p>
+            Raíz Psychotherapy, is deeply grounded in the understanding of how systemic issues of the world we live in play major roles in our mental health. By acknowledging the systemic, I take a
+            liberatory approach as we dive deeper in our work together to explore the factors influencing your day-to-day life to better support you in meeting your therapeutic goals.{" "}
+          </p>
+          <p>
+            I chose the name Raíz Psychotherapy because I have a long-time appreciation and awe for plants and the way roots exist in the dark and soil to sustain the plant that lives above ground,
+            often hidden but always doing life-sustaining work. I love the idea of roots serving as symbols of growth, depth, grounding, establishing belonging, and unique intrinsic knowledge.{" "}
+          </p>
+        </section>
       </section>
     </main>
   );
