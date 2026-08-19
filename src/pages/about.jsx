@@ -52,7 +52,7 @@ function About() {
         I was trained in psychodynamic theory and incorporate somatic techniques learned through my training in Somatic Experiencing. I also draw a lot from attachment theory and emotionally-focused
         therapy (EFT). My work in community health has also trained me in cognitive behavioral therapy (CBT), dialectical behavior therapy (DBT), and acceptance and commitment therapy (ACT)
         interventions, and I use these once in a while as they are evidence-based interventions. When I do incorporate techniques from these last three modalities, I like to combine the interventions
-        with client-centered and holistic interventions an d techniques to ensure that each client's individual set of strengths and experiences is honored as we work together towards their goals.
+        with client-centered and holistic interventions and techniques to ensure that each client's individual set of strengths and experiences is honored as we work together towards their goals.
       </p>
 
       <div className="invert-section">

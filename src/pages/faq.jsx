@@ -29,7 +29,7 @@ const faqItems = [
         I take some major insurance plans, including NorCal Kaiser, through the platform Grow Therapy. Grow Therapy is an online platform that connects people seeking therapy to therapy providers who
         take their insurance.{" "}
         <a href="https://growtherapy.com/provider/genw4e143iav/aleida-moreno" target="_blank" rel="noopener noreferrer">
-          You can find me on here
+          You can find me on here{" "}
         </a>
         , but please note that you will have to sign up through Grow Therapy and we will be required to use their platform for sessions covered by insurance.
       </p>
@@ -44,7 +44,7 @@ const faqItems = [
         low-income individuals who received EBT or other County Services. I also offer a few sessions for $150 on{" "}
         <a href="https://growtherapy.com/provider/genw4e143iav/aleida-moreno" target="_blank" rel="noopener noreferrer">
           Grow Therapy
-        </a>
+        </a>{" "}
         for individuals and couples. As my practice becomes more full-time in the next year, I will revisit my fee model and hope to offer sliding scale services all in one place.
       </p>
     ),
