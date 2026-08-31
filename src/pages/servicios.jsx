@@ -62,7 +62,7 @@ export default function Servicios() {
     },
     {
       id: "card-6",
-      title: "Mejora las relaciones con tus seres queridos LGBT",
+      title: "Mejorar las relaciones con tus seres queridos LGBT",
       content:
         "A veces nuestros seres queridos toman decisiones sobre sus vidas que no nos agradan y no sabemos cómo apoyarlos, comunicar nuestros miedos, hacer preguntas o tomar espacio para procesar las noticias en una manera que mantiene el amor y la conexión.  Yo soy una terapista y soy parte de la comunidad LGBT y para mi es un honor poder apoyar a personas que quieren aprender a aceptar a sus seres queridos. En nuestras sesiones, podemos procesar la información que recibió y hablar sobre miedos, dudas, o conflictos internos que pueda sentir. Podemos practicar como hablar con la familia sobre temas LGBT, hacer preguntas de manera respetuosa, aprender a desarrollar aceptación y apoyo para su ser querido LGBT para mantener una relación sana con ellos.",
     },
@@ -73,7 +73,7 @@ export default function Servicios() {
       <div className="servicios-hero card card-padding-2">
         <div className="servicios-hero-grid">
           <div className="servicios-hero-copy">
-            <h1 className="section-title">Un Poco sobre mí</h1>
+            <h1 className="section-title">Un poco sobre mí</h1>
             <p>
               ¡Hola! Mi nombre es Aleida Moreno y soy terapista de matrimonio y familia licenciada en el estado de california. Tengo más de 10 años de experiencia trabajando en el sistema de salud
               mental y apoyando el crecimiento de mis clientes hacia los objetivos que se han propuesto.
