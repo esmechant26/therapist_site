@@ -10,6 +10,67 @@ body,
   background-color: #fffbeb;
 }
 
+.nested-accordion {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.nested-accordion-item {
+  background: transparent;
+  border-bottom: 1px solid var(--muted-border);
+}
+
+.nested-accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  color: var(--color-text);
+  font-weight: 600;
+  text-align: left;
+}
+
+.nested-accordion-label {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.nested-accordion-header.open {
+  color: var(--color-accent);
+}
+
+.nested-accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition:
+    max-height 250ms ease,
+    padding 250ms ease;
+}
+
+.nested-accordion-panel.open {
+  max-height: 1000px;
+  padding-bottom: 0.9rem;
+}
+
+.work-with-summary {
+  margin: 0 0 0.75rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.work-with-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
 .home-hero {
   min-height: 450px;
   max-width: 1900px;
@@ -45,7 +106,7 @@ body,
   font-size: 1.3rem;
   line-height: 1.6;
 
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto 2rem;
 }
 /* Prevent fixed header from covering anchored section headings */

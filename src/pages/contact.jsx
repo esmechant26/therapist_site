@@ -28,7 +28,10 @@ export default function Contact() {
   return (
     <div className={styles.contactCard}>
       <div className="card card-padding-2">
-        <h1 className="section-title">Contact</h1>
+        <h3 className="section-subtitle">
+          Get in touch to schedule a free 20 minute phone consultation! Please include a few dates and times that work for you and whether you prefer to be contacted via call, text, or email to
+          confirm your consultation time.{" "}
+        </h3>
 
         <p className={styles.helperNote}></p>
 

@@ -426,39 +426,90 @@ h4,
 }
 
 .servicios-card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.75rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
 .service-card {
-  background: #4f140a;
+  background: #3b1105;
   color: #fffbeb;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  text-align: left;
   border: 1px solid rgba(255, 82, 87, 0.14);
-  border-radius: var(--card-radius);
-  box-shadow: 0 10px 26px rgba(70, 50, 35, 0.09);
-  padding: 1.75rem;
-  flex: 0 0 320px;
+  border-radius: 12px;
+  padding: 0;
+  min-width: 0;
+  align-self: start;
   transition:
     transform 200ms ease,
     box-shadow 200ms ease;
 }
 
 .service-card:hover {
-  transform: translateY(-0.25rem);
-  box-shadow: 0 16px 36px rgba(70, 50, 35, 0.14);
+  transform: translateY(-0.15rem);
+  box-shadow: 0 10px 22px rgba(70, 50, 35, 0.08);
+}
+
+.service-card-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: transparent;
+  border: none;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  color: #fffbeb;
+  text-align: left;
+  font: inherit;
+}
+
+.service-card-toggle.open {
+  color: #fffbeb;
 }
 
 .service-card-title {
-  align-items: center;
-  text-align: center;
-  color: #fffbeb;
-  margin-top: 0;
+  display: block;
+  text-align: left;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.35;
+  font-size: 1.05rem;
+}
+
+.service-card-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.1rem;
+  transition:
+    max-height 250ms ease,
+    padding 250ms ease;
+}
+
+.service-card-body.open {
+  max-height: 1000px;
+  padding: 0 1.1rem 1rem;
+}
+
+.service-card-body p {
+  margin: 0;
+  color: rgba(255, 251, 235, 0.86);
+  line-height: 1.7;
+}
+
+@media (max-width: 980px) {
+  .servicios-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .servicios-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .servicios-contact-section {
@@ -502,6 +553,7 @@ h4,
 }
 
 .footer-content {
+  font-family: "Source Sans 3", sans-serif;
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1.5rem;

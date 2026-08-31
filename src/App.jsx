@@ -38,7 +38,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-content">
           <p>
-            Practice Address: Fully remote in Oakland, California | Phone Number: 510-544-6979 | Social:{" "}
+            Fully remote in Oakland, California | 510-544-6979 |{"  "}
             <a href="https://instagram.com/raizpsychotherapy" target="_blank" rel="noopener noreferrer" className="footer-social-link">
               <span className="footer-social-icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">

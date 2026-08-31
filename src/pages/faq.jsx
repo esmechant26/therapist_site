@@ -3,6 +3,55 @@ import { Link } from "react-router-dom";
 
 const faqItems = [
   {
+    id: "therapist-question",
+    question: "How do I ask my therapist about their values?",
+    answer: (
+      <>
+        <p className="muted faq-answer">
+          It can feel intimidating to ask a therapist questions that feel personal, there is a cultural understanding that it is not okay to do that in a therapeutic relationship. However, if certain
+          values or perspectives are important to you, it can be challenging to develop a trusting therapeutic relationship with someone you aren’t sure holds similar values. It is incredibly
+          important to be sure that you feel confident that the person you are collaborating with in your healing.
+        </p>
+        <p>
+          The Liberatory Wellness Network is a directory and formerly a therapy collective and some time ago, they shared examples of questions that you can ask of your therapist to support you in
+          making an informed choice about your providers. I have included the list below.
+        </p>
+        <p className="muted faq-answer">These can serve as a good starting out point:</p>
+        <ul className="muted faq-answer">
+          <li>How do you understand mental health outside of diagnosis and pathology?</li>
+          <li>How do you support clients in navigating distress without relying on police or hospitalization?</li>
+          <li>yHow do you acknowledge the impact of capitalism, racism, ableism, and state violence on mental health?</li>
+          <li>How do you hold power in the therapy space?</li>
+          <li>What is your stance on psychiatric medication and diagnosis?</li>
+          <li>What is your relationship to mutual aid, collective care, and community healing?</li>
+          <li>Who are you accountable to?</li>
+          <li>How do you respond when harm is named?</li>
+          <li>What does liberation mean to you?</li>
+        </ul>
+        <p>
+          Therapists may or may not be open to answering the questions. Despite how disappointing that might be, it is also information that you can take in as you make a choice in providers. Please
+          feel free to bring these and any other questions to your consultation or sessions at Raíz Psychotherapy.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "clients",
+    question: "What kind of clients do you usually see?",
+    answer: (
+      <>
+        <p>
+          I’ve worked with historically underserved communities my whole career in the field. Working primarily with BIPOC and people who are LGBTQ+, I tend to do a lot of work around trauma and the
+          various ways it manifests in people. Oftentimes my clients identify with having multiple traumatic experiences across their lives.
+        </p>
+        <p>
+          The presentations I see most often include people with anxiety around specific things like socializing, dating, or sex. I have also worked with a lot of people for whom trauma shows up as
+          perfectionism, have high expectations for themselves and others that impact connections, or result in a lot of self-doubt and self-criticism.
+        </p>
+      </>
+    ),
+  },
+  {
     id: "therapy-step",
     question: "How do I know if therapy is the right step for me?",
     answer: (
@@ -25,29 +74,46 @@ const faqItems = [
     id: "insurance",
     question: "Do you take insurance?",
     answer: (
-      <p className="muted faq-answer">
-        I take some major insurance plans, including NorCal Kaiser, through the platform Grow Therapy. Grow Therapy is an online platform that connects people seeking therapy to therapy providers who
-        take their insurance.{" "}
-        <a href="https://growtherapy.com/provider/genw4e143iav/aleida-moreno" target="_blank" rel="noopener noreferrer">
-          You can find me on here{" "}
-        </a>
-        , but please note that you will have to sign up through Grow Therapy and we will be required to use their platform for sessions covered by insurance.
-      </p>
+      <>
+        <p className="muted faq-answer">
+          I take some major insurance plans, including NorCal Kaiser and some California Medi-cal managed care plans like SF Health Plan through the platform Grow Therapy. Grow Therapy is an online
+          platform that connects people seeking therapy to therapy providers who take their insurance. You can find me on Grow on{" "}
+          <a href="https://growtherapy.com/provider/genw4e143iav/aleida-moreno" target="_blank" rel="noopener noreferrer">
+            here.
+          </a>{" "}
+          Please note that you will have to sign up through Grow Therapy and we will be required to use their platform for sessions covered by insurance.
+        </p>
+        <p>I also take other insurances through Headway.</p>
+      </>
     ),
   },
   {
     id: "sliding-scale",
     question: "Do you have a sliding scale?",
     answer: (
-      <p className="muted faq-answer">
-        I currently do not have a sliding scale model, but I do offer a few ways to receive sessions for less. I have a couple of slots available for $70 on Open Path Collective for uninsured,
-        low-income individuals who received EBT or other County Services. I also offer a few sessions for $150 on{" "}
-        <a href="https://growtherapy.com/provider/genw4e143iav/aleida-moreno" target="_blank" rel="noopener noreferrer">
-          Grow Therapy
-        </a>{" "}
-        for individuals and couples. As my practice becomes more full-time in the next year, I will revisit my fee model and hope to offer sliding scale services all in one place.
-      </p>
+      <>
+        <p className="muted faq-answer">
+          I currently do not have a sliding scale model, but I save 1/2 my caseload for people who need sessions with me at more accessible rates. I have a couple slots available for $70/individual
+          sessions on{" "}
+          <a href="https://openpathcollective.org/therapist/aleida-moreno/" target="_blank" rel="noopener noreferrer">
+            Open Path Collective.
+          </a>{" "}
+          Open Path Collective slots are reserved for people who are low-income and do not have access to insurance.
+        </p>
+        <p className="muted faq-answer">
+          I also have a couple slots available for $158 per session on{" "}
+          <a href="https://growtherapy.com/provider/genw4e143iav/aleida-moreno" target="_blank" rel="noopener noreferrer">
+            Grow Therapy
+          </a>{" "}
+          and Headway for individuals or relationships. As my practice becomes more full-time in the next year, I will revisit my fee model and hope to offer sliding scale services all in one place!
+        </p>
+      </>
     ),
+  },
+  {
+    id: "fee",
+    question: "Will you ever change your fees?",
+    answer: "I plan to raise my fee $8-$15 at the start of every calendar year. I provide my clients plenty of advance notice before raising rates. ",
   },
   {
     id: "weekly-session",
@@ -111,7 +177,7 @@ function FAQ() {
 
         <p className="section-copy">
           Still unsure if therapy at Raíz Psychotherapy is for you after reading through this list? <Link to="/contact">Schedule a complimentary 20 minute information call </Link>
-          via text or video so we can work out any lingering questions.
+          so we can work out any lingering questions and see if Raíz Psychotherapy is a good fit for you.
         </p>
       </div>
     </section>
